@@ -18,16 +18,13 @@ namespace SimpleFolderIcon.Editor
             {
                 return;
             }
-
             BuildIconDictionary();
-            
         }
 
         private static bool ContainsIconAsset(string[] assets)
         {
             foreach (string str in assets)
             {
-                Debug.Log(UnityCommonConfig.CommonPacakgePath+"/"+AssetsPath);
                 if (ReplaceSeparatorChar(Path.GetDirectoryName(str)) == UnityCommonConfig.CommonPacakgePath+"/"+AssetsPath)
                 {
                     return true;
@@ -45,7 +42,6 @@ namespace SimpleFolderIcon.Editor
         {
             var dictionary = new Dictionary<string, Texture>();
             var dir = new DirectoryInfo(Application.dataPath.Replace("Assets","") +UnityCommonConfig.CommonPacakgePath+ "/" + AssetsPath);
-            Debug.Log(dir);
             FileInfo[] info = dir.GetFiles("*.png");
             foreach(FileInfo f in info)
             {
