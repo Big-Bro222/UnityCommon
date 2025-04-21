@@ -1,0 +1,22 @@
+{
+    "name": "SimpleFolderIcon",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d175287e816dc984b8251c0c765de5ce"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "iOS",
+        "LinuxStandalone64",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
